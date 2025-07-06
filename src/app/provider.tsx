@@ -1,4 +1,5 @@
 import type { PropsWithChildren } from "react";
+
 import { ThemeProvider } from "~/components/providers/theme";
 
 export function RootProvider({ children }: Readonly<PropsWithChildren>) {
