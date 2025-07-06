@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import type { PropsWithChildren } from "react";
-
+import { RootProvider } from "~/app/provider";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -10,8 +10,10 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: Readonly<PropsWithChildren>) {
   return (
-    <html lang="en">
-      <body className="antialiased">{children}</body>
+    <html lang="en" suppressHydrationWarning>
+      <body className="antialiased">
+        <RootProvider>{children}</RootProvider>
+      </body>
     </html>
   );
 }
