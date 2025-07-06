@@ -7,10 +7,12 @@
     "prod:build": "next build",
     "prod:start": "next start",
     "biome:check": "biome check",
-    "biome:write": "biome check --write"
+    "biome:write": "biome check --write",
+    "ui:add": "shadcn add"
   },
   "packageManager": "pnpm@10.11.1",
   "dependencies": {
+    "@radix-ui/react-slot": "^1.2.3",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "lucide-react": "^0.525.0",
@@ -26,6 +28,7 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "shadcn": "^2.7.0",
     "tailwindcss": "^4",
     "tw-animate-css": "^1.3.5",
     "typescript": "^5"
