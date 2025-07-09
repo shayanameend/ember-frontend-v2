@@ -1,5 +1,4 @@
 import { ArrowRightIcon } from "lucide-react";
-import Image from "next/image";
 
 import { Button } from "~/components/ui/button";
 import { cn } from "~/lib/utils";
@@ -9,12 +8,12 @@ export function CTASection() {
     <section
       className={cn("bg-primary text-secondary/75 relative overflow-hidden")}
     >
-      <Image
-        src="https://images.pexels.com/photos/1587927/pexels-photo-1587927.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080"
-        alt="CTA Background"
-        className={cn("absolute inset-0 opacity-20")}
-        width={1920}
-        height={1080}
+      <div
+        className={cn("absolute inset-0 opacity-20 bg-cover bg-center")}
+        style={{
+          backgroundImage:
+            "url('https://images.pexels.com/photos/1587927/pexels-photo-1587927.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080')",
+        }}
       />
       <div
         className={cn(
