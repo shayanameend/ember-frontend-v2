@@ -12,10 +12,10 @@ export function Logo({ isInverted: _ = false }: Readonly<LogoProps>) {
         <FlameIcon className={cn("size-8")} />
       </div>
       <div className={cn("font-[--font-playfair-display]")}>
-        <h1 className={cn("text-secondary-foreground text-4xl font-medium")}>
+        <h1 className={cn("text-4xl font-medium")}>
           {process.env.NEXT_PUBLIC_APP_NAME}
         </h1>
-        <p className={cn("text-secondary-foreground font-medium")}>
+        <p className={cn("font-medium")}>
           {process.env.NEXT_PUBLIC_APP_DESCRIPTION}
         </p>
       </div>

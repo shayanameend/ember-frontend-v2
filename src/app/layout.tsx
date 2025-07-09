@@ -16,7 +16,7 @@ export default function RootLayout({ children }: Readonly<PropsWithChildren>) {
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${fonts.playfairDisplay.variable} font-sans antialiased`}
+        className={`${fonts.playfairDisplay.variable} font-sans antialiased text-secondary-foreground`}
       >
         <RootProvider>
           <Header />
