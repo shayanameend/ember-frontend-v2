@@ -10,7 +10,7 @@
     "biome:write": "biome check --write",
     "ui:add": "shadcn add"
   },
-  "packageManager": "pnpm@10.11.1",
+  "packageManager": "pnpm@10.12.4",
   "dependencies": {
     "@radix-ui/react-slot": "^1.2.3",
     "@stripe/react-stripe-js": "^3.7.0",
