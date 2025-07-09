@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import type { PropsWithChildren } from "react";
 
-import { RootProvider } from "~/app/provider";
 import { fonts } from "~/lib/fonts";
+import { Footer } from "./_layout/footer";
+import { Header } from "./_layout/header";
+import { RootProvider } from "./provider";
 
 import "./globals.css";
 
@@ -16,7 +18,11 @@ export default function RootLayout({ children }: Readonly<PropsWithChildren>) {
       <body
         className={`${fonts.playfairDisplay.variable} font-sans antialiased`}
       >
-        <RootProvider>{children}</RootProvider>
+        <RootProvider>
+          <Header />
+          {children}
+          <Footer />
+        </RootProvider>
       </body>
     </html>
   );
