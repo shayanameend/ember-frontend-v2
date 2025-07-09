@@ -6,7 +6,7 @@ export function RootProvider({ children }: Readonly<PropsWithChildren>) {
   return (
     <ThemeProvider
       attribute="class"
-      defaultTheme="system"
+      defaultTheme="light"
       enableSystem
       disableTransitionOnChange
     >
