@@ -9,7 +9,7 @@ import {
 import { StarRating } from "~/components/ui/star-rating";
 import { cn } from "~/lib/utils";
 
-const testimonialsItems = [
+const testimonials = [
   {
     name: "Sarah Johnson",
     title: "Denver, CO • Funeral Program",
@@ -52,7 +52,7 @@ export function TestimonialsSection() {
           </p>
         </div>
         <ul className={cn("flex flex-wrap justify-center gap-4")}>
-          {testimonialsItems.map((item) => (
+          {testimonials.map((item) => (
             <Card className={cn("w-full max-w-sm")} key={item.name}>
               <CardHeader>
                 <StarRating size="lg" rating={item.rating} />
