@@ -35,7 +35,7 @@ const testimonials = [
 
 export function TestimonialsSection() {
   return (
-    <section className={cn("")}>
+    <section className={cn("relative overflow-hidden")}>
       <div
         className={cn(
           "max-w-7xl mx-auto px-4 py-20 relative flex flex-col items-center gap-16",
