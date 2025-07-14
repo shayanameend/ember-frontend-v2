@@ -48,7 +48,7 @@ export function TestimonialsSection() {
             What Families Say?
           </h2>
           <p className={cn("text-lg max-w-2xl")}>
-            Trusted by thousands of families nationwide
+            Trusted by thousands of families nationwide.
           </p>
         </div>
         <ul className={cn("flex flex-wrap justify-center gap-4")}>
