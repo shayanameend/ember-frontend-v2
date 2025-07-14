@@ -1,5 +1,5 @@
 {
-  "name": "ember-frontend-v2",
+  "name": "ember-next",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -10,7 +10,7 @@
     "biome:write": "biome check --write",
     "ui:add": "shadcn add"
   },
-  "packageManager": "pnpm@10.12.4",
+  "packageManager": "pnpm@10.13.1",
   "dependencies": {
     "@radix-ui/react-separator": "^1.1.7",
     "@radix-ui/react-slot": "^1.2.3",
