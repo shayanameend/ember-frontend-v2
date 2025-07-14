@@ -36,13 +36,13 @@ export function HeroSection() {
       />
       <div
         className={cn(
-          "max-w-7xl mx-auto px-4 py-28 relative flex flex-col items-center gap-8",
+          "max-w-7xl mx-auto px-4 py-20 md:py-28 relative flex flex-col items-center gap-8",
         )}
       >
         <div className={cn("text-center space-y-4")}>
           <h2
             className={cn(
-              "text-6xl font-medium font-[--font-playfair-display]",
+              "text-4xl md:text-6xl font-medium font-[--font-playfair-display]",
             )}
           >
             <span className={cn("block")}>Honor Their Memory with</span>
@@ -57,7 +57,7 @@ export function HeroSection() {
           </p>
         </div>
         <div className={cn("flex flex-col items-center gap-12")}>
-          <div className={cn("flex items-center gap-4")}>
+          <div className={cn("flex flex-col md:flex-row items-center gap-4")}>
             <Button variant="default" size="3xl" className={cn("font-bold")}>
               Begin Your Memorial <ArrowRightIcon className={cn("size-5")} />
             </Button>
@@ -66,7 +66,11 @@ export function HeroSection() {
               <p>24-hour proof delivery guaranteed</p>
             </div>
           </div>
-          <ul className={cn("flex items-center gap-36")}>
+          <ul
+            className={cn(
+              "flex flex-col md:flex-row items-center gap-8 md:gap-36",
+            )}
+          >
             {features.map((item) => (
               <li className={cn("flex items-center gap-2")} key={item.name}>
                 {item.icon}
