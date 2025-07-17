@@ -1,11 +1,9 @@
+import { ArrowRightIcon, PackageIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-
-import { ArrowRightIcon, PackageIcon } from "lucide-react";
-
-import { cn } from "~/lib/utils";
 import { Badge } from "~/components/ui/badge";
 import { buttonVariants } from "~/components/ui/button";
+import { cn } from "~/lib/utils";
 
 const products = [
   {
