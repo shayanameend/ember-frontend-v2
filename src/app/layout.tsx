@@ -10,6 +10,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: `${process.env.NEXT_PUBLIC_APP_NAME} - ${process.env.NEXT_PUBLIC_APP_DESCRIPTION}`,
+  description: process.env.NEXT_PUBLIC_APP_DESCRIPTION,
 };
 
 export default function RootLayout({ children }: Readonly<PropsWithChildren>) {
