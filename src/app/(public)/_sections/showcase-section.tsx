@@ -122,7 +122,7 @@ export function ShowcaseSection() {
                   {item.images.slice(1).map((image, index) => (
                     <li
                       className={cn("rounded-xl overflow-hidden aspect-[4/3]")}
-                      key={index}
+                      key={image}
                     >
                       <Image
                         src={image}
@@ -157,8 +157,8 @@ export function ShowcaseSection() {
                   <div className="space-y-3">
                     <h3 className="font-semibold">Features &amp; Options:</h3>
                     <ul className="ml-4 space-y-2 list-disc">
-                      {item.features.map((feature, index) => (
-                        <li key={index}>{feature}</li>
+                      {item.features.map((feature) => (
+                        <li key={feature}>{feature}</li>
                       ))}
                     </ul>
                   </div>

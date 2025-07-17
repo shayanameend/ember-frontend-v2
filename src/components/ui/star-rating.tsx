@@ -28,7 +28,7 @@ export function StarRating({
 
         return (
           <StarIcon
-            key={index}
+            key={starNumber}
             className={cn(
               sizeClasses[size],
               isFilled
